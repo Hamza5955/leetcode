@@ -21,8 +21,11 @@ var twoSum = function(nums, target) {
 
     }
 
-    // Big O notation for this algorithm is  Time : O(n^2) Space : O(1) 
-    // 'n' is the length of the 'nums' array
-    // because in the worst case senerio we lop to the array twice
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1)
+    // Where 'n' represents the length of the 'nums' array.
+    // This is because, in the worst-case scenario, we loop through the array twice.
+
 
 };
