@@ -21,4 +21,8 @@ var twoSum = function(nums, target) {
 
     }
 
+    // Big O notation for this algorithm is  Time : O(n^2) Space : O(1) 
+    // 'n' is the length of the 'nums' array
+    // because in the worst case senerio we lop to the array twice
+
 };
