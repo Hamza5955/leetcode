@@ -44,6 +44,8 @@ var twoSum = function(nums, target) {
     // Where 'n' represents the length of the 'nums' array.
     // This is because, in the worst-case scenario, we loop through the array twice.
 
+
+
     let map = new Map();
 
     for (let i = 0; i < nums.length; i++) {
@@ -61,5 +63,12 @@ var twoSum = function(nums, target) {
         map.set(num1, i);
 
     }
+
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    // Where 'n' represents the length of the 'nums' array.
+    // The time complexity is O(n) because, in the worst-case scenario, we loop through the entire 'nums' array exactly once.
+    // The space complexity is O(n) because, in the worst-case scenario, we store all the values of the 'nums' array in the map.
 
 };
