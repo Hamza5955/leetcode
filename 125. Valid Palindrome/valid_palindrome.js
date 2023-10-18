@@ -52,4 +52,11 @@ var isPalindrome = function(s) {
     const cleanedStr = s.toLowerCase().replace(/[^a-z0-9]/g, '');
 
     return cleanedStr === cleanedStr.split('').reverse().join('');
+
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    // The algorithm iterates through the input string once, where n is the length of the input string.
+    // Space Complexity: O(n) - The cleaned string is stored in memory.
+    
 };
