@@ -49,3 +49,30 @@ var twoSum = function(numbers, target) {
     return fuck_you(i, j,Math.ceil(j / 2) , numbers, target);
     
 };*/
+
+var twoSum = function(nums, target) {
+
+    let i = 0;
+
+    let j = nums.length - 1;
+
+    while (i < j) {
+
+        let curSum = nums[i] + nums[j];
+
+        if (curSum > target) {
+
+            j--;
+
+        } else if (curSum < target) {
+
+            i++;
+
+        } else {
+
+            return [i + 1, j + 1];
+            
+        }
+    }
+    
+};
