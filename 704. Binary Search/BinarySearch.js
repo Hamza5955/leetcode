@@ -1,4 +1,3 @@
-<?php
 // Source : https://leetcode.com/problems/binary-search/
 
 /*********************************************************************
@@ -16,44 +15,38 @@
  * 
  *********************************************************************/
 
-
- class Solution {
-
 /**
- * @param Integer[] $nums
- * @param Integer $target
- * @return Integer
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
  */
-function search($nums, $target) {
+var search = function(nums, target) {
 
-$left = 0;
+    left = 0;
 
-$right = count($nums) - 1;
+    right = nums.length - 1;
 
-    while ($left <= $right) {
+    while (left <= right) {
 
-        $mid = floor(($left + $right) / 2);
+        mid = Math.floor((left + right) / 2);
 
-        if ($nums[$mid] == $target) {
+        if (nums[mid] === target) {
 
-            return $mid;
+            return mid;
 
-        }
+        } else if (nums[mid] > target) {
 
-        if ($nums[$mid] > $target) {
-
-            $right = $mid - 1;
+            right = mid - 1;
 
         } else {
 
-            $left = $mid + 1;
+            left = mid + 1;
 
         }
-    }
-
-    return -1;
 
     }
 
-}
-?>
+    return - 1;
+    
+};
+
