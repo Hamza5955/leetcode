@@ -50,3 +50,6 @@ var search = function(nums, target) {
     
 };
 
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(log n)
+    // Where 'n' represents the length of the 'nums' array.
