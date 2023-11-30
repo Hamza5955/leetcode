@@ -9,7 +9,7 @@ class Solution {
     function maxArea($height) {
 
         // brute force
-
+        /*
         $k = 0;
 
         for ($i = 0; $i < count($height) - 1; $i++)  {
@@ -31,9 +31,38 @@ class Solution {
 
         return $k;
 
-        
+        */
 
-        
+        $left = 0;
+
+        $right = count($height) - 1;
+
+        $j = 0;
+
+        while ($left < $right) {
+
+            $area = min($height[$left], $height[$right]) * ($right - $left);
+
+            if ($area > $j) {
+
+                $j = $area;
+
+            }
+
+            if ($height[$left] < $height[$right]) {
+
+                $left++;
+
+            } else {
+
+                $right--;
+
+            }
+
+        }
+
+        return $j;
+
     }
 
 }
