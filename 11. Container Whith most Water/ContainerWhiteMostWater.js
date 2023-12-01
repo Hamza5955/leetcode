@@ -51,5 +51,12 @@ var maxArea = function(height) {
     }
 
     return j;
+
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    // Where 'n' represents the length of the 'heights'/'nums' array.
+    // The time complexity is O(n) because, in the worst-case scenario, we loop through the entire 'heights'/'nums' array exactly once.
+    // The space complexity is O(n) because, in the worst-case scenario, we store all the values of the 'heights' array in the set.
     
 };
