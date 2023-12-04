@@ -57,5 +57,12 @@ var isValid = function(s) {
 
     return stack.length === 0;
 
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    // Where 'n' represents the length of s
+    // The time complexity is O(n) because, we loop through the entire 's' array exactly once.
+    // The space complexity is O(n) because, we store all the values of the 's' in the array stack.
+
 
 };
