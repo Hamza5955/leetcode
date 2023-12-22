@@ -58,4 +58,12 @@ var longestConsecutive = function(nums) {
 
     return maxit;
     
+
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    // Where 'n' represents the length of the 'heights'/'nums' array.
+    // The time complexity is O(n) because in this case we loop over each value in the set once, and the set operations are O(1).
+    // The space complexity is O(n) because we store all value from the input array in the set.
+
 };
