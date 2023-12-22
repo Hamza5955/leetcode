@@ -26,5 +26,36 @@
  * @return {number}
  */
 var longestConsecutive = function(nums) {
+
+    if (nums == null || nums.length == 0) {
+        return 0;
+    }
+    
+    const set = new Set(nums);
+
+    let maxit = 1;
+
+    for (let value of set) {
+    console.log(value);
+
+        if(set.has(value - 1)){
+            continue;
+        }
+
+        let currNum = value;
+
+        let currMax = 1;
+
+        while (set.has(currNum + 1)) {
+            
+            currNum++;
+            currMax++;
+        
+        }
+
+        maxit = Math.max(maxit,currMax);
+    }
+
+    return maxit;
     
 };
