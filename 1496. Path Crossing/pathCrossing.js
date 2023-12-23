@@ -25,6 +25,49 @@
  */
 var isPathCrossing = function(path) {
 
+    const set = new Set();
 
+    let j = 0;
+
+    let x = 0;
+
+    for (const char of path) {
+        
+        if (char == 'N') {
+
+            j++
+
+        } else if (char == 'S') {
+
+            j--;
+
+        } else if (char == 'W' ) {
+
+            x++;
+
+        } else if (char == 'E') {
+
+            x--
+
+        }
+
+        if (x == 0 && j == 0) {
+
+            return true
+
+        }
+        const point = `${x}-${j}`;
+
+        if (set.has(point)) {
+
+            return true
+
+        }
+
+        set.add(point)
+
+    }
+
+    return false;
 
 };
