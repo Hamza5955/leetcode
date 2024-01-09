@@ -26,6 +26,51 @@
  */
 var trap = function(height) {
     
+    let left = 0;
+
+    let right = height.length - 1;
+
+    let Mleft = 0;
+
+    let Mright = 0 
+
+    let j = 0;
+
+    while (left < right) {
+
+        if (height[left] < height[right]) {
+
+            if (height[left] >= Mleft) {
+
+                Mleft = height[left];
+
+            } else {
+
+                j += Mleft - height[left];
+
+            }
+
+            left++;
+
+        } else {
+
+        if (height[right] >= Mright) {
+
+            Mright = height[right];
+
+        } else {
+
+            j += Mright - height[right];
+
+        }
+
+        right--;
+
+        }
+
+    }
+    
+    return j;
 
 
 };
