@@ -73,4 +73,11 @@ var trap = function(height) {
     return j;
 
 
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
+    // Where 'n' represents the length of the 'height' array.
+    // The time complexity is O(n) because we loop over each value in the array 'height'.
+    // The space complexity is O(1) because we dont use extra spece.
+
 };
