@@ -53,4 +53,12 @@ var maxProfit = function(prices) {
 
     return maxProfit;
 
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
+    // Where 'n' represents the length of the 'prices' array.
+    // The time complexity is O(n) because, the algorithm iterate through the prices array only once, using two pointers (left and right).
+    // The space complexity is O(1) because the algorithm don't use any additional data.
+
 };
+
