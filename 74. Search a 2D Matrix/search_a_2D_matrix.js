@@ -50,4 +50,11 @@ var searchMatrix = function(matrix, target) {
 
     return false;
 
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(m * n)
+    // where 'm' is the number of rows and 'n' is the number of columns in the matrix. 
+    // The algorithm iterates through each element in the matrix until it finds a match or reaches the end.
+    // space complexity : O(1)
+    // The space complexity is O(1) because the algorithm doesn't use any additional space
+
 };
