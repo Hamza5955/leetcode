@@ -59,6 +59,7 @@ var searchMatrix = function(matrix, target) {
     // space complexity : O(1)
     // The space complexity is O(1) because the algorithm doesn't use any additional space
 
+
     if (matrix.length === 0 || matrix[0].length === 0) {
 
         return false;
@@ -97,5 +98,11 @@ var searchMatrix = function(matrix, target) {
 
     return false;
 
+    // The Big O notation for this algorithm is as follows:
+    // Time Complexity: O(log(m * n))
+    // where 'm' is the number of rows and 'n' is the number of columns in the matrix.
+    // is basecly a duble binary search were it efficiently eliminates half of the search space in each iteration.
+    // space complexity : O(1)
+    // The space complexity is O(1) because the algorithm doesn't use any additional space.
 
 };
