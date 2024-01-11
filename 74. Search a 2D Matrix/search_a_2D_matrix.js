@@ -30,7 +30,9 @@
  */
 var searchMatrix = function(matrix, target) {
 
-    if (matrix.length === 0 || matrix[0].length === 0) {
+    //brute force 
+
+    /*if (matrix.length === 0 || matrix[0].length === 0) {
 
         return false;
 
@@ -48,7 +50,7 @@ var searchMatrix = function(matrix, target) {
         }
     }
 
-    return false;
+    return false;*/
 
     // The Big O notation for this algorithm is as follows:
     // Time Complexity: O(m * n)
@@ -56,5 +58,44 @@ var searchMatrix = function(matrix, target) {
     // The algorithm iterates through each element in the matrix until it finds a match or reaches the end.
     // space complexity : O(1)
     // The space complexity is O(1) because the algorithm doesn't use any additional space
+
+    if (matrix.length === 0 || matrix[0].length === 0) {
+
+        return false;
+
+    }
+
+    let numRows = matrix.length;
+
+    let numCols = matrix[0].length;
+
+    let  left = 0;
+
+    let right = numRows * numCols - 1;
+
+    while (left <= right) {
+
+        let mid = Math.floor((left + right) / 2);
+
+        let midValue = matrix[Math.floor(mid / numCols)][mid % numCols];
+
+        if (midValue === target) {
+
+            return true;
+
+        } else if (midValue > target) {
+
+            right = mid - 1;
+
+        } else {
+
+            left = mid + 1;
+
+        }
+
+    }
+
+    return false;
+
 
 };
